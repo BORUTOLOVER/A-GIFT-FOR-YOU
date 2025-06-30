@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Love You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔒 Lock Screen -->
+  <div id="lock-screen">
+    <div class="lock-text">Swipe up to unlock</div>
+    <input type="password" id="unlock-input" placeholder="Enter password" />
+    <button onclick="unlockPhone()">Unlock</button>
+  </div>
+
+  <!-- 📱 Home Screen -->
+  <div id="home-screen" class="hidden">
+    <div class="app-icon" onclick="openApp('gallery')">
+      <img src="assets/gallery.png">
+      <span>Gallery</span>
+    </div>
+    <div class="app-icon" onclick="openApp('freefire')">
+      <img src="assets/freefire.png">
+      <span>Free Fire</span>
+    </div>
+    <div class="app-icon" onclick="openApp('instagram')">
+      <img src="assets/instagram.png">
+      <span>Instagram</span>
+    </div>
+    <div class="app-icon" onclick="openApp('music')">
+      <img src="assets/music.png">
+      <span>Music</span>
+    </div>
+  </div>
+
+  <!-- 🖼️ Gallery App -->
+  <div id="gallery" class="app hidden">
+    <div class="app-title">This is your cuteness ❤️</div>
+    <div class="gallery-photos">
+      <img src="assets/photo1.jpg">
+      <img src="assets/photo2.jpg">
+      <img src="assets/photo3.jpg">
+    </div>
+  </div>
+
+  <!-- 🎮 Free Fire App -->
+  <div id="freefire" class="app hidden">
+    <img src="assets/ffscene.jpg" style="width:100%; border-radius:15px;">
+    <p style="text-align:center; font-size:18px; margin-top:10px;">The place we met ❤️</p>
+  </div>
+
+  <!-- 📸 Instagram App -->
+  <div id="instagram" class="app hidden">
+    <div class="insta-post">I</div>
+    <div class="insta-post">LOVE</div>
+    <div class="insta-post">YOU</div>
+    <div class="insta-message">
+      <p>Yug: How's my gift?</p>
+      <p>You like it or not?</p>
+      <p>💖💖💖</p>
+      <p>🌸🌸🌸</p>
+    </div>
+    <p style="text-align:center; margin-top:15px;">(Scroll down and click on the message)</p>
+  </div>
+
+  <!-- 🎵 Music App -->
+  <div id="music" class="app hidden">
+    <div class="music-title">Music ❤️</div>
+    <audio controls src="assets/music1.mp3"></audio>
+    <audio controls src="assets/music2.mp3"></audio>
+    <audio controls src="assets/music3.mp3"></audio>
+    <p style="text-align:center;">Volume up 🔊</p>
+  </div>
+
+  <!-- 🔗 JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

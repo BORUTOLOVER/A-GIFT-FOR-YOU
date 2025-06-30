@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#lock-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('assets/lockscreen.jpg') no-repeat center center/cover;
+  text-align: center;
+}
+
+.lock-text {
+  font-size: 1.5em;
+  color: pink;
+  margin-bottom: 20px;
+}
+
+#unlock-input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: pink;
+  color: white;
+  font-size: 1em;
+}
+
+#home-screen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('assets/home.jpg') no-repeat center center/cover;
+  padding: 40px 20px;
+}
+
+.app-icon {
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.app-icon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px pink;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.app-title,
+.music-title {
+  font-size: 1.8em;
+  text-align: center;
+  color: pink;
+  margin-bottom: 10px;
+}
+
+.gallery-photos img {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 10px white;
+}
+
+.insta-post {
+  font-size: 2em;
+  margin: 10px;
+  color: hotpink;
+  text-align: center;
+}
+
+.insta-message p {
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 10px;
+  color: white;
+}
+
+#music audio {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+}
